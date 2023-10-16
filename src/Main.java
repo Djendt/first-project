@@ -18,7 +18,8 @@ public class Main {
             if (command == 1) {
                 addNewNumberStepsPerDay();
             } else if (command == 2) {
-
+                System.out.println("Текущая цель шагов в день:" + goalByStepsPerDay);
+                changeStepGoal();
             } else if (command == 3) {
 
             } else if (command == 0) {

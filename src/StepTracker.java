@@ -31,18 +31,34 @@ public class StepTracker {
                     return;
         }
 
-        MonthData monthData = monthData[month - 1];
+        MonthData monthData = monthtoData[month - 1];
         monthData.days[day - 1] = monthData.days[day - 1] + steps;
         System.out.println("Значение сохранено!");
 
     }
 
     void changeStepGoal() {
-        System.out.println("Введите цель шагов в месяц:");
+        System.out.println("Введите цель шагов в день:");
         goalByStepsPerDay = scanner.nextInt();
         if (goalByStepsPerDay <= 0) {
             System.out.println("Выбрано некорректное значение цели");
         }
+    }
+
+    void printStatistic() {
+        System.out.println("Введите число месяца");
+        // ввод и проверка номера месяца
+
+        monthData = // получение соответствующего месяца
+        int sumSteps = // получение суммы шагов за месяц
+                // вывод общей статистики по дням
+                // вывод суммы шагов за месяц
+                // вывод максимального пройденного количества шагов за месяц
+                // вывод среднего пройденного количества шагов за месяц
+                // вывод пройденной за месяц дистанции в км
+                // вывод количества сожжённых килокалорий за месяц
+                // вывод лучшей серии
+                System.out.println(); //дополнительный перенос строки
     }
 
 }
