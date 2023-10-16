@@ -21,7 +21,7 @@ public class Main {
                 System.out.println("Текущая цель шагов в день:" + goalByStepsPerDay);
                 changeStepGoal();
             } else if (command == 3) {
-
+                printStatistic();
             } else if (command == 0) {
                 System.out.println("Выход");
                 break;
